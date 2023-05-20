@@ -1,13 +1,77 @@
-body {
+*{
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body {
+  background-color: #f4f4f4;
+  display: grid;
+  place-items: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: 'Poppins', sans-serif;
+}
+
+.case {
+  width: 19rem;
+  height: 26rem;
+  background-color: rgb(146, 65, 222);
+  border-radius: 1rem;
+  box-shadow: 4px 4px 12px rgba(0, 0, 10, 0.4);
+  filter: drop-shadow(4px 4px 12px rgb(17, 13, 13));
+  padding: 1.5rem 1.5rem;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid rgb(217, 82, 195);
+  border-radius: 1rem;
+  padding: 1rem;
+  height: 12rem;
+  background-color: #fff;
+}
+
+.keys {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+}
+
+.btn-left {
+  background-color: green;
+  border-radius: 2rem 0 0 2rem;
+}
+.btn-clear {
+  background-color: yellow;
+}
+.btn-right {
+  background-color: red;
+  border-radius: 0 2rem 2rem 0;
+}
+
+button {
+  width: 5rem;
+  height: 7rem;
+  padding: 1rem 1rem;
+  color: #fff;
+  font-weight: 600;
+  font-size: 18px;
+  border: 1px solid #fff;
+  transition: 0.3s ease;
+  cursor: pointer;
+}
+
+p{
+  font-style: italic;
+  font-weight: lighter;
+  text-align: center;
+  color: #fff;
+  margin-bottom: 1.5rem;
+}
+
+button:hover {
+  transform: scale(1.05);
 }
